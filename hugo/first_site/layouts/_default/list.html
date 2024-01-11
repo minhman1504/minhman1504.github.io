@@ -13,5 +13,7 @@
         {{ range .Pages }}
         <p> {{ .Title }} </p>
         {{ end }}
+        {{ $image := resources.Get "images/Mi-mup.jpg" }}
+        <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
     </body>
 </html>
