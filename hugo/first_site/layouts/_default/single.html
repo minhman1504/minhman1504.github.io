@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <p>Hello world !!!</p>
+        <p>Single Page</p>
+        {{ .Content }}
+        {{ $image := resources.Get "images/Mi-mup.jpg" }}
+        <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}">
+    </body>
+</html>

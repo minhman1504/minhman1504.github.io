@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <p>Hello world !!!</p>
+        <p>List Page</p>
+        {{ .Content }}
+        <h3>{{ .Date }}</h3>
+        <h3>{{ .Title }}</h3>
+        {{ range .Pages }}
+        <p> {{ .Title }} </p>
+        {{ end }}
+    </body>
+</html>
